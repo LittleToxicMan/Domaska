@@ -1,0 +1,9 @@
+a=[]
+s=[]
+n=12
+for i in range(0,n):
+    a.append(float(input()))
+for k in range(0,n-1):
+    s.append(a[k+1]/a[k])
+srznak=round((sum(s)/len(s)),3)
+print(srznak)
