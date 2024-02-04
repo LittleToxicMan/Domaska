@@ -1,0 +1,7 @@
+a=int(input())
+if (a//10==0 and a%10==0) or (a//10==0 and a%10>=5) or (a//10>=1 and a%10>=5) or (a//10==1 and a%10==1) or (a//10>=1 and a%10==0)  :
+    print(a,'тортов')
+elif (a//10==0 and a%10==1) or (a//10>1 and a%10==1):
+    print(a,'торт')
+elif (a//10==0 and 2<=a%10<=4) or (a//10>=2 and 2<=a%10<=4):
+    print(a,'торта')
