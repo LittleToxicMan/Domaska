@@ -1,0 +1,13 @@
+N=int(input())
+summa=0
+m = list(map(int, input().split()))
+max_summa=0
+k=int(input())
+for i in range(0,N):
+	if i+k<=N:
+		for z in range(0,k):
+			summa+=m[i+z]
+		if summa>max_summa:
+			max_summa=summa
+		summa=0
+print(max_summa)
